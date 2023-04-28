@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Users</title>
+    <link rel="stylesheet" href="/showStyle.css">
+</head>
+
+<body>
+    <%- include('nav') %>
+        <h1>All Users</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let user of users) { %>
+                    <tr>
+                        <td>
+                            <%= user.name %>
+                        </td>
+                        <td>
+                            <%= user.age %>
+                        </td>
+                        <td>
+                            <%= user.email %>
+                        </td>
+                        <td>
+                            <%= user.password %>
+                        </td>
+                        <td>
+                            <%= user.gender %>
+                        </td>
+                        <td>
+                            <%= user.city %>
+                        </td>
+                        <td>
+                            <%= user.message %>
+                        </td>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </table>
+</body>
+
+</html>

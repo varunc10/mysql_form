@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+
+<body>
+    <%- include('nav') %>
+        <div class="container">
+            <form action="/" method="POST" id="form" class="form">
+                <h2>Register Form</h2>
+
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" name="name" />
+                </div>
+
+                <div class="form-control">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age" name="age" />
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" name="email" />
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" name="password" />
+                </div>
+
+                <div class="form-control">
+                    <label for="gender">Gender</label>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Other</label>
+                </div>
+
+                <div class="form-control">
+                    <label for="city">City</label>
+                    <select id="city" name="city">
+                        <option value="">Select your city</option>
+                        <option value="newdelhi">New Delhi</option>
+                        <option value="london">London</option>
+                        <option value="paris">Paris</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+</body>
+
+</html>
